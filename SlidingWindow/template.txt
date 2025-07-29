@@ -1,0 +1,41 @@
+                            
+Patterns and worth doing questions time to time
+
+1. Sliding window
+
+Traditional must do
+A. 3. Longest Substring Without Repeating Characters
+→ Track the longest substring with unique characters.
+
+Sum related
+B. 209. Minimum Size Subarray Sum
+→ Min length subarray with sum ≥ target.
+
+No hashing, intuitive and asked in Campus
+C. Max Consecutive Ones 3
+
+Key Concept used
+D. 992. Subarrays with K Different Integers
+→ Use the formula:
+subarrays with exactly K = atMost(K) - atMost(K - 1)
+
+// Slight change and different from traditional sliding window such as A. 3. Longest Substring Without Repeating Characters
+E.424. Longest Repeating Character Replacement
+→ Max length substring where you can replace at most k characters.
+F. Fruit into baskets 
+
+
+Template for variable
+
+int l = 0;
+int r = 0;
+
+while(r < s.size()){
+// expand window with nums[right]
+
+while(condition not met){
+// shrink window from left
+left++;
+}
+// Process or update result like maxLen or whatever and increase r
+}
